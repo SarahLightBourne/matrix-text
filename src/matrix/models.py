@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Collection(models.Model):
-    name = models.CharField('Name', max_length=15)
+    name = models.CharField('Name', max_length=25, unique=True)
     active = models.BooleanField('Active', default=True)
 
     def __str__(self) -> str:
@@ -17,7 +17,7 @@ class Label(models.Model):
         related_name='labels'
     )
 
-    text = models.CharField('Text', max_length=25)
+    text = models.CharField('Text', max_length=50)
     active = models.BooleanField('Active', default=True)
 
     def __str__(self) -> str:
