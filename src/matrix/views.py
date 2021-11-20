@@ -3,8 +3,8 @@ from django.shortcuts import redirect
 
 
 def index_view(request):
-    return redirect('homepage:collection', name='hello')
+    return redirect('matrix:collection', name='hello')
 
 
 class CollectionView(generic.TemplateView):
-    template_name = 'homepage/collection.html'
+    template_name = 'matrix/collection.html'

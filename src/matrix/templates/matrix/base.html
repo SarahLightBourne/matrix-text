@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'matrix/css/style.css' %}">
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+        <script src="{% static 'matrix/js/script.js' %}"></script>
+    </body>
+</html>
