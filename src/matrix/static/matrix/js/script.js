@@ -90,7 +90,7 @@ response.onload = () => {
     let counter = 0;
     const next = () => {
         fx.setText(labels[counter]).then(() => {
-            setTimeout(next, 1600);
+            setTimeout(next, 1700);
         });
         counter = (counter + 1) % labels.length;
     };
