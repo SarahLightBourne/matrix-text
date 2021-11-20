@@ -67,7 +67,7 @@ const el = document.querySelector('.text');
 const fx = new TextScramble(el);
   
 let url = window.location.href.split('/');
-let api = `http://${url[2]}/api/collection/${url[3]}/`;
+let api = `https://${url[2]}/api/collection/${url[3]}/`;
 
 let response = new XMLHttpRequest();
 response.open('GET', api, true)
